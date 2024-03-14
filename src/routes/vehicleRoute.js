@@ -1,8 +1,9 @@
 const express = require("express");
-const vehicleController = require("../controllers/vehicle.controller");
+const vehicleRouteController = require("../controllers/vehicleRoute.controller");
 
 const router = express.Router();
 
-router.get("/allVehicles", vehicleController.getAll);
+router.get("/allBusRoute", vehicleRouteController.getAllBusRoute);
+router.get("/allMetroRoute", vehicleRouteController.getAllMetroRoute);
 
 module.exports = router;
